@@ -4,7 +4,7 @@ namespace ds_challenge_05.Controllers;
 
 
 [ApiController]
-[Route("api/challenge05")]
+[Route("api/challenge")]
 public class ChallengeMethodController : ControllerBase
 {
     [HttpGet(Name = "ChallengeMethod")]
