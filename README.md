@@ -6,20 +6,20 @@
 * This section will explore on adding more extensions in consistent way and also debugging code.
 
 ### Set Up + verification
-* Run the dotnet application using commands "2. Build" from devfile like you did in the previous lab(s)
+* Run the dotnet application using command "4. Run" from devfile like you did in the previous lab(s)
 * Open a new terminal and execute below command. The response from the method has an error. The fifth character is "S" but it is returning "h"
   ```bash
   curl localhost:5154/api/challenge
   ```
-* Open the "/Controllers/DSChallenge05Controller.cs" and inspect the method challengeMethod()
+* Open the "/Controllers/DSChallenge05Controller.cs" and inspect the method ChallengeMethod()
 * Try to put a breakpoint and you realize that they do not work and or a way to do it
 * Find out what extension is required for adding breakpoints. Include the required line in the file ".vscode/extensions.json"
-* Once you update the extensions.json, restart your workspace (This time it will be quicker). Now you should be able to put a breakpoint in the challengeMethod()
-* Rerun the dotnet application using command "2. Build". 
+* Once you update the extensions.json, restart your workspace (This time it will be quicker). Now you should be able to put a breakpoint in the ChallengeMethod()
 * You can now use the "Run & Debug" from the navigation. You may get prompted to Restore the file or install any missing components, click yes and/or restore to these prompts.
+* From the left Menu, Click the Debug and Run Icon (A triangle with a bug on top of it). If the debugger is installed correctly, you will have an option on the top to run the debugger by clicking the Play Icon.
 * Now fix the code, execute below command and ensure you are seeing "The Fifth Chatacter in the word "OpenShift"=[S]"
   ```bash
-  curl localhost:5154/api/challenge
+  curl localhost:5000/api/challenge
   ```
 
 ### Success Criteria
