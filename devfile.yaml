@@ -10,7 +10,7 @@ components:
         - exposure: public
           name: 'greet-endpoint'
           protocol: https
-          targetPort: 5152
+          targetPort: 5154
           path: '/openapi/v1.json'
       volumeMounts:
         - name: nuget
